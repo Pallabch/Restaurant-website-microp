@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+html,body{
+    font-family: 'Raleway', sans-serif;
+}
+.homepbody{
+    overflow: hidden;
+}
+*:focus{
+    outline-style: none !important;
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+}
+.contain{
+    padding-left: 4.1vw;
+}
+nav{
+    margin-top: 1.5vw;
+    padding-right: 3vw !important;
+    font-weight: 600; 
+}
+.nav-item{
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+nav a{
+    color: #FF0000;
+}
+nav a:hover{
+    color: #FF0000;
+}
+.navbar-brand{
+    padding-left: 1.5vw;
+    font-weight: 500;
+    font-size: 45px;
+}
+.navbar-brand span{
+    color: #928F8C;
+}
+.signup{
+    border-color: #FF0000 !important;
+}
+.homepage-body{
+    height: 100vh;
+}
+.location .form-group{
+    padding-left: 0;
+}
+.location label{
+    font-size: 35px;
+    font-weight: 500;
+}
+.location .row{
+    position: relative;
+    margin-left: 0;
+}
+.location img,.stores-navbar img{
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    z-index: 2;
+    width: 25px;
+    opacity: 0.6;
+}
+.location input,.stores-navbar input{
+    border-radius: 50px !important;
+}
+.location button, .restaurantform button{
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border: 0;
+}
+.homepage-right-container{
+    background-color: #DADADA;
+    width: 100%;
+}
+.homepage-right-container img{
+    position: relative;
+    top: 50px;
+    left: -200px;
+}
+
+/*Stores page stylesheet*/
+.stores-contain{
+    padding-left: 1vw;
+}
+.stores-navbar img{
+    position: relative;
+    left: 40px;
+}
+.stores-navbar .row{
+    width: 30vw;
+}
+.stores-navbar input{
+    padding-left: 50px;
+}
+.stores-search-bar img{
+    width: 25px;
+    position: relative;
+    left: 30px;
+    opacity: 0.6;
+}
+.stores-search-bar input,.restaurantform input[type="text"]{
+    border: 0;
+    border-radius: 0;
+    width: 96% !important;
+    font-size: 20px
+}
+.delivery{
+    margin-top: 0.17vw;
+}
+.breakfast{
+    margin-top: 0.087vw;
+}
+.drinks{
+    margin-top: -0.3vw;
+}
+.cafes{
+    margin-top: -0.2vw;
+}
+.pocket-friendly{
+    margin-top: 0.1vw;
+}
+.stores-quick-links{
+    padding-left: 3vw;
+}
+.stores-quick-links .row{
+    width: 100%;
+}
+.stores-quick-links a{
+    text-decoration: none;
+    width: 12.5%;
+}
+.stores-quick-links img{
+    display: block;
+    margin: auto;
+}
+.stores-quick-links div{
+    color: #8C8C8C;
+    font-size: 17px;
+    font-weight: 400;
+}
+.quick-link-caption{
+    position: relative;
+    left: -39vw;
+    font-size: 30px !important;
+    color: #000000 !important;
+}
+
+/*Restaurant Form Stylesheet*/
+.pretty{
+    margin-right: 0;
+}
+.form-label-group label{
+    font-size: 20px;
+    font-weight: 300;
+}
+.form-label-group{
+    position: relative;
+    margin-bottom: 1rem;
+}  
+.form-label-group > input,
+.form-label-group > label {
+    height: 3.125rem;
+    padding: .75rem;
+}
+.form-label-group > label{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text; /* Match the input under the label */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}  
+.form-label-group input::-webkit-input-placeholder{
+    color: transparent;
+}
+.form-label-group input:-ms-input-placeholder{
+    color: transparent;
+}
+.form-label-group input::-ms-input-placeholder{
+    color: transparent;
+}
+.form-label-group input::-moz-placeholder{
+    color: transparent;
+}
+.form-label-group input::placeholder{
+    color: transparent;
+}
+.form-label-group input:not(:placeholder-shown){
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+.form-label-group input:not(:placeholder-shown) ~ label{
+    margin-top: -1.7rem;
+    padding-bottom: .25rem;
+    color: #FF0000;
+    font-weight: 200;
+}
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto){
+    .form-label-group > label{
+        display: none;
+    }
+    .form-label-group input::-ms-input-placeholder{
+      color: #FF0000;
+    }
+}
+.spacing{
+    margin-top: 35px;
+}
+.cuisine>div{
+    margin-left: 10px;
+}
+.cuisine label{
+    font-size: 20px;
+    font-weight: 300 !important;
+}
+.pretty input:checked~.state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after{
+    background-color: #FF2E2E !important;
+}
+.pretty.p-curve .state label:after, .pretty.p-curve .state label:before{
+    border-radius: 10%;
+}
+.restaurantform button{
+    display: flex;
+}

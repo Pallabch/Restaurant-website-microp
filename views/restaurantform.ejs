@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Pretty Checkbox CSS-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+        <!-- Developer CSS -->
+        <link rel="stylesheet" type="text/css" href="dbms.css">
+
+        <title>COMIDA</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">Comi<span>dA</span></a>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item signup border rounded-lg">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="form-group restaurantform ml-5 mt-5 mb-5" action="index.html">
+            <div class="form-label-group">
+                <input type="text" id="enterprisename" class="form-control border-bottom" placeholder="Enterprise Name">
+                <label for="enterprisename">Enterprise Name</label>
+            </div>
+            <div class="form-label-group spacing">
+                <input type="text" id="addressline1" class="form-control border-bottom" placeholder="Address Line 1">
+                <label for="addressline1">Address Line 1</label>
+            </div>
+            <div class="form-label-group spacing">
+                <input type="text" id="addressline2" class="form-control border-bottom" placeholder="Address Line 2 (Optional)">
+                <label for="addressline2">Address Line 2 (Optional)</label>
+            </div>
+            <div class="cuisine spacing">
+                <h2>Cuisine</h2>
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="chinese">
+                            <div class="state p-danger">
+                                <label for="chinese">Chinese</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="indian">
+                            <div class="state p-danger">
+                                <label for="indian">Indian</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="northindian">
+                            <div class="state p-danger">
+                                <label for="northindian">North Indian</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="desserts">
+                            <div class="state p-danger">
+                                <label for="desserts">Desserts</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="pizza">
+                            <div class="state p-danger">
+                                <label for="pizza">Pizza</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="fastfood">
+                            <div class="state p-danger">
+                                <label for="fastfood">Fast Food</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="southindian">
+                            <div class="state p-danger">
+                                <label for="southindian">South Indian</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="icecream">
+                            <div class="state p-danger">
+                                <label for="icecream">Ice Cream & Frozen Yogurt</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="burgers">
+                            <div class="state p-danger">
+                                <label for="burgers">Burgers</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="streetfood">
+                            <div class="state p-danger">
+                                <label for="streetfood">Street Food</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="american">
+                            <div class="state p-danger">
+                                <label for="american">American</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="pureveg">
+                            <div class="state p-danger">
+                                <label for="pureveg">Pure Veg</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="chicken">
+                            <div class="state p-danger">
+                                <label for="chicken">Chicken</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="italian">
+                            <div class="state p-danger">
+                                <label for="italian">Italian</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="bakery">
+                            <div class="state p-danger">
+                                <label for="bakery">Bakery</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="momos">
+                            <div class="state p-danger">
+                                <label for="momos">Momos</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="juice">
+                            <div class="state p-danger">
+                                <label for="juice">Juice & Smoothies</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="veg">
+                            <div class="state p-danger">
+                                <label for="veg">Vegetarian</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="seafood">
+                            <div class="state p-danger">
+                                <label for="seafood">Sea Food</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="breakfast">
+                            <div class="state p-danger">
+                                <label for="breakfast">Breakfast & Brunch</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="vegfriendly">
+                            <div class="state p-danger">
+                                <label for="vegfriendly">Vegetarian Friendly</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="sandwiches">
+                            <div class="state p-danger">
+                                <label for="sandwiches">Sandwiches</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="healthy">
+                            <div class="state p-danger">
+                                <label for="healthy">Healthy</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="rolls">
+                            <div class="state p-danger">
+                                <label for="rolls">Rolls</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="lebanese">
+                            <div class="state p-danger">
+                                <label for="lebanese">Lebanese</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="bbq">
+                            <div class="state p-danger">
+                                <label for="bbq">BBQ</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="thai">
+                            <div class="state p-danger">
+                                <label for="thai">Thai</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="cafe">
+                            <div class="state p-danger">
+                                <label for="cafe">Cafe</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="middleeastern">
+                            <div class="state p-danger">
+                                <label for="middleeastern">Middle Eastern</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="asian">
+                            <div class="state p-danger">
+                                <label for="asian">Asian</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="belgian">
+                            <div class="state p-danger">
+                                <label for="belgian">Belgian</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="tibetan">
+                            <div class="state p-danger">
+                                <label for="tibetan">Tibetan</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="mexican">
+                            <div class="state p-danger">
+                                <label for="mexican">Mexican</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="coffee">
+                            <div class="state p-danger">
+                                <label for="coffee">Coffee & Tea</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="french">
+                            <div class="state p-danger">
+                                <label for="french">French</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="japanese">
+                            <div class="state p-danger">
+                                <label for="japanese">Japanese</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="halal">
+                            <div class="state p-danger">
+                                <label for="halal">Halal</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="arabian">
+                            <div class="state p-danger">
+                                <label for="arabian">Arabian</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="southamerican">
+                            <div class="state p-danger">
+                                <label for="southamerican">South American</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="british">
+                            <div class="state p-danger">
+                                <label for="british">British</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="tamerican">
+                            <div class="state p-danger">
+                                <label for="tamerican">Traditional American</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="veganfriendly">
+                            <div class="state p-danger">
+                                <label for="veganfriendly">Vegan Friendly</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="nepalese">
+                            <div class="state p-danger">
+                                <label for="nepalese">Nepalese</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="nethai">
+                            <div class="state p-danger">
+                                <label for="nethai">North Eastern Thai</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="burmese">
+                            <div class="state p-danger">
+                                <label for="burmese">Burmese</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="malaysian">
+                            <div class="state p-danger">
+                                <label for="malaysian">Malaysian</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="vietnamese">
+                            <div class="state p-danger">
+                                <label for="vietnamese">Vietnamese</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-fill p-curve col-4">
+                            <input type="checkbox" value="" id="ricebowls">
+                            <div class="state p-danger">
+                                <label for="ricebowls">Rice-bowls</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit btn" class="mt-5 mb-5 mx-auto py-2 px-4">Next</button>
+        </form>
+        <!-- JavaScripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
