@@ -4,13 +4,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 html,body{
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
 }
 .homepbody{
     overflow: hidden;
+}
+.restaurantpbody{
+    overflow-x: hidden;
 }
 *:focus{
     outline-style: none !important;
@@ -76,6 +79,7 @@ nav a:hover{
     color: #FFFFFF;
     background-color: #FF0000;
     border: 0;
+    font-weight: 600;
 }
 .homepage-right-container{
     background-color: #DADADA;
@@ -88,6 +92,10 @@ nav a:hover{
 }
 
 /*Stores page stylesheet*/
+.restaurantcards a{
+    color:inherit;
+    text-decoration: none;
+}
 .stores-contain{
     padding-left: 1vw;
 }
@@ -143,15 +151,33 @@ nav a:hover{
     margin: auto;
 }
 .stores-quick-links div{
-    color: #8C8C8C;
+    color: #000000;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 100;
 }
 .quick-link-caption{
     position: relative;
     left: -39vw;
     font-size: 30px !important;
     color: #000000 !important;
+}
+.restaurantcards{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+}
+.rating img{
+    width: 1.5rem;
+}
+.restaurantcards .card{
+    transition: box-shadow 0.3s;
+}
+.restaurantcards .card:hover{
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.175)!important;
+}
+.rating{
+    background-color: #F0F0F0;
+    width: 6.495vw;
 }
 
 /*Restaurant Form Stylesheet*/
@@ -239,4 +265,85 @@ nav a:hover{
 }
 .restaurantform button{
     display: flex;
+}
+
+/*Restaurant Page*/
+.restaurantc{
+    position: relative;
+}
+.restaurantc>img{
+    width: 100%;
+    height: 60vh;
+}
+.restaurantc>div{
+    position: absolute !important;
+    top: 5vw;
+    left: 5vw;
+}
+.restaurantc .card{
+    margin-top: -30px;
+}
+.restaurantc .card-title{
+    margin-bottom: 5vw;
+}
+.restaurantc ul{
+    margin-bottom: 3vw;
+}
+.restaurantpnav{
+    padding: 2vw 3vw 2vw 3vw;
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #AAAAAA;
+}
+.restaurantpnav a{
+    color: #555555;
+}
+.restaurantpnav a:hover{
+    color: #FF0000;
+}
+.type{
+    margin: 5vw 0 0 5vw;
+}
+.cat{
+    margin-left: 0.01vw;
+    padding-left: 0;
+    width: 100%;
+}
+.cat .card{
+    width: 100%;
+}
+.cat .card-title{
+    margin-bottom: 50px;
+}
+.cat button{
+    border: 1px solid #FF0000 !important;
+}
+.cart{
+    margin-top: 10vw;
+}
+.cart button{
+    border-width: 0px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    width: 50%;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.cart button:hover{
+    color: #FFFFFF;
+}
+@media(min-width: 1281px)
+{
+    .rating{
+        width: 4.33vw;
+    } 
+}
+
+/*Checkout Page*/
+.container {
+    max-width: 960px;
+  }
+.lh-condensed { line-height: 1.25; }
+.checkoutp{
+    /**/
 }

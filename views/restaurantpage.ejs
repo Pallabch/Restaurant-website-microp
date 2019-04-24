@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head class="restaurantpbody">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Developer CSS -->
+        <link rel="stylesheet" type="text/css" href="/dbms.css">
+        <title>COMIDA</title>
+    </head>
+    <body class="restaurantpbody">
+        <!-- Navbar -->
+        <nav class="navbar stores-navbar">
+            <a class="navbar-brand" href="#">Comi<span>dA</span></a>
+            <form class="form-inline">
+                <div class="row">
+                    <i><img src="/icons/location/1x/location.png"></i>
+                    <input type="text" class="form-control col-10 pl-5" placeholder="Enter your address">
+                </div>
+            </form>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item signup border rounded-lg">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="restaurantc">
+            <img src="/images/imagecap.png">
+            <div class="col-4">
+                <div class="card p-1">
+                    <div class="card-body">
+                        <h2 class="card-title"> <%=sql[0].RestaurantName %></h2>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">• Cuisine 1</li>
+                            <li class="list-inline-item">• Cuisine 2</li>
+                        </ul>
+                        <div class="rating p-1">Rating <img src="/icons/starrating/2x/starrating.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="nav restaurantpnav">
+            <a class="nav-link" href="#type1">Type 1</a>
+            <a class="nav-link" href="#type2">Type 2</a>
+            <a class="nav-link" href="#type3">Type 3</a>
+            <a class="nav-link" href="#">. . .</a>
+            <a class="nav-link" href="#">. . .</a>
+            <a class="nav-link" href="#">. . .</a>
+        </nav>
+
+        <div class="row">
+            <div class="type row col-7">
+                <h3 id="type1">Type 1</h3>
+                <div class="cat mt-4">
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title md-4">Dish Name</h5>
+                            <button class="float-right submit btn">ADD</button>
+                            <div class="card-text">Price: INR XXX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat mt-4">
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title md-4">Dish Name</h5>
+                            <button class="float-right submit btn">ADD</button>
+                            <div class="card-text">Price: INR XXX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart col-4">
+                <div class="card p-4">
+                    <button class="submit btn mx-auto mb-4" onclick=redirect()>Checkout</button>
+                    <h5>Dish <span class="orderquantity float-right">XX</span></h5>
+                    <h5>. <span class="orderquantity float-right">.</span></h5>
+                    <h5>. <span class="orderquantity float-right">.</span></h5>
+                    <h5>. <span class="orderquantity float-right">.</span></h5>
+                </div>
+            </div>
+            <div class="type row col-7">
+                <h3 id="type2">Type 2</h3>
+                <div class="cat mt-4">
+                    <div class="card p-1">
+                        <div class="card-body">
+                            <h5 class="card-title md-4">Dish Name</h5>
+                            <button class="float-right submit btn">ADD</button>
+                            <div class="card-text">Price: INR XXX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type row col-7">
+                <h3 id="type3">Type 3</h3>
+                <div class="cat mt-4">
+                    <div style="font-size: 30px; text-align: center">.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                </div>
+            </div>
+        </div>
+        <!-- JavaScripts -->
+        <script>
+            function redirect(){
+                location.href='/checkout'  
+            };
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
